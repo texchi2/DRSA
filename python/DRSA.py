@@ -1,5 +1,6 @@
-from BASE_MODEL import BASE_RNN
 import sys
+sys.path.append("/content/DRSA/python") # BASE_MODEL.py
+from BASE_MODEL import BASE_RNN
 
 #default parameter
 FEATURE_SIZE = 16 # dataset input fields count
@@ -17,7 +18,7 @@ BETA = 0.2 # coefficient for anlp
 input_file="2259" #toy dataset
 
 if len(sys.argv) < 2:
-    print "Please input learning rate. ex. 0.0001"
+    print ("Please input learning rate. ex. 0.0001")
     sys.exit(0)
 
 LR = float(sys.argv[1])
